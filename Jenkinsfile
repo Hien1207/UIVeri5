@@ -27,4 +27,17 @@ node {
             reportName: "UIVeri5 Test Report"
         ]
     }
+    
+pipeline {
+    agent any
+    stages {
+        stage('Git Checkout') {
+            steps {
+            vcCheckout(
+                branch: "main",
+                url: "https://github.com/nclouds/jenkins_shared_library"
+            )
+            }
+    }
+    }
 }
