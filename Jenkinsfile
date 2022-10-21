@@ -27,6 +27,7 @@ node {
             reportName: "UIVeri5 Test Report"
         ]
     }
+}
     
 pipeline {
     agent any
