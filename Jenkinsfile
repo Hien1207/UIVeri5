@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-@Library(['piper-lib-os']) _
+@Library([]) _
 pipeline {
  agent any
  stages {
