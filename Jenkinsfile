@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-@Library(['piper-lib-os']) _
+@Library(['piper-library-os@2716054392ead88ecba5c984967d1ab64279db02']) _
 
 node {
     stage("System tests") {
