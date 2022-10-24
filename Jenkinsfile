@@ -22,7 +22,7 @@ node {
        
         // Checkout git repository wich contains the application and UIVeri5 tests
         // Git url is propageted through the pipelines configuration 
-        git url: scm.userRemoteConfigs[0].url, branch: "jenkinsExercise"
+        git url: scm.userRemoteConfigs[0].url, branch: "main"
            
         // Setup the environment to start the application with CAP server - npm install of all required tools
         // and execute UIVeri5 system tests
