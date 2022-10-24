@@ -1,6 +1,20 @@
 #!/usr/bin/env groovy
 @Library(['piper-lib-os']) _
-
+pipeline {
+ agent any
+ stages {
+   stage('init') {
+      scripts {
+        library "shared-library@master"
+      }
+   }
+   stage('Build'){
+     steps {
+       echo "build stage"
+     }
+   }
+ }
+}
 node {
     stage("System tests") {
         // Delete all old files to begin with clean workspace
